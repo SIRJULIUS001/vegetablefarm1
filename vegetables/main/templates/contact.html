@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'contact.css'%}">
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or feedback, feel free to reach out!</p>
+
+    <form method="post" class="contact-form">
+        {% csrf_token %}
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+{% endblock %}

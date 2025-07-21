@@ -1,0 +1,33 @@
+.services-section{
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.services-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4caf50;
+}
+.service-card{
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.service-card h3{
+    color: #4caf50;
+    margin-bottom: 10px;
+
+}
+.service-card p{
+    margin-bottom: 10px;
+}
+.service-card ul{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

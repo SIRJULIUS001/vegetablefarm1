@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Gallery{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'gallery.css'%}">
+<h2>Our Products Gallery</h2>
+{% for product in products %}
+<div class="product-card">
+    <h3>{{ product.name }}</h3>
+    <p>Price: Ksh {{ product.price }}</p>
+    
+    <form action="{% url 'add_to_cart' product.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Add to Cart</button>
+    </form>
+</div>
+{% endfor %}
+<section class="products-section">
+    <h2>Our fresh vegetables</h2>
+
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Tomatoes</h3>
+            <p>ksh 50/kg</p>
+            <button>Add to Cart</button>
+        </div>
+        
+         <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>carrots</h3>
+            <p>ksh 70/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Kales </h3>
+            <p>ksh 60/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Spinach</h3>
+            <p>ksh 40/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Cabbage</h3>
+            <p>ksh 70/piece</p>
+            <button>Add to Cart</button>
+        </div>
+
+         <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Onion</h3>
+            <p>ksh 90/kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Cabbage</h3>
+            <p>ksh 70/piece</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="" alt="tomatoes">
+            <h3>Cabbage</h3>
+            <p>ksh 70/piece</p>
+            <button>Add to Cart</button>
+        </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'home.css'%}">
+<section class="hero">
+    <h2>Fresh Vegetables Delivered to You</h2>
+    <p>Healthy. Organic. Affordable.</p>
+    <a href="">Shop Now</a>
+</section>
+
+<section class="section">
+    <h3>Our Fresh Vegetables</h3>
+    <div class="products">
+        <div class="product-card">
+            <img src="{% static 'images/tomatoes.jpg'%}" alt="tomatoes">
+            <h4>Tomatoes</h4>
+            <p>Ksh 50/kg</p>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/hoho.jpg'%}" alt="hoho">
+            <h4>Hoho</h4>
+            <p>Ksh 70/kg</p>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/carrots.jpg'%}" alt="carrots">
+            <h4>Carrots</h4>
+            <p>Ksh 80/kg</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h3>About Fresh Harvest</h3>
+    <p>We are committed to providing fresh and organic vegetables directly
+        from our farm to your table. Our focusis on healthy living and supporting 
+        local comminities through sustainable farming practices.
+    </p>
+</section>
+{% endblock %}

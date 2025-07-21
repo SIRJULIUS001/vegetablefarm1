@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Services{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'services.css'%}">
+<section class="services-section">
+    <h2>Our Services</h2>
+    <div class="section-card">
+        <h3>Fresh Vegetable Delivery</h3>
+        <p>we deliver fresh vegetables daily or weekly to homes, hotels, restaurants and schools</p>
+        <ul>
+            <li>Available Monday to Saturday</li>
+            <li>Minimum order: ksh 300</li>
+            <li>Orders placed before 4 pm deliverd same day</li>
+        </ul>
+    </div>
+
+     <div class="section-card">
+        <h3>Vegetable Subscription Boxes</h3>
+        <p>Get sorted seasonal vegetables delivered to you weekly or monthly at discounted prices</p>
+        <ul>
+            <li>Flexible subscription plans</li>
+            <li>Includes recipes and usage tips</li>
+        </ul>
+    </div>
+
+     <div class="section-card">
+        <h3>Farm Visits and Tours</h3>
+        <p>We offer organised visits for schools, groups, or individuals to learn about organic farming</p>
+        <ul>
+            <li>Guided tours by our farm manager</li>
+            <li>Interactive farming and haversting experiece</li>
+        </ul>
+    </div>
+
+     <div class="section-card">
+        <h3>Bulk Orders for Events and Institutions</h3>
+        <p>We supply vegetables in bulk for events,functions, hotels, and schools at competitive rates</p>
+        <ul>
+            <li>Customized quotes available</li>
+            <li>Reliable delivery schedule</li>
+        </ul>
+    </div>
+
+     <div class="section-card">
+        <h3>Training and Consultations</h3>
+        <p>We provide training sessions for small farmers and community groups on sustainable vegetable
+            farming practices
+        </p>
+        <ul>
+            <li>Organic farming techniques</li>
+            <li>Market access guidance</li>
+        </ul>
+    </div>
+</section>
+{% endblock%}

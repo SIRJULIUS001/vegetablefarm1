@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'about.css' %}">
+<section class="about-section">
+    <h2>About Us</h2>
+    <p>Welcome to Fresh Harest! We are dedicated team passionate abut growing and deliering
+        the freshest vegetables directly from our farm to your table. 
+    </p>
+
+    <h3>Our Story</h3>
+    <p>Fresh Harest was founded in 2019 by Ntoiti Julius with a ision to proide healthy,
+        organic, and affordable vegetables to our local community in Meru. What began as 
+        a small garden projecct has grown into trusted farm supplying homes, hotels, and 
+        schools with fresh produce every day.
+    </p>
+
+    <h3>Our Mission</h3>
+    <p>To become the leading proider of organic and fresh vegetables in Kenya and beyond</p>
+
+    <h3>Our Values</h3>
+    <div class="values">
+        <div class="value-card">
+            <h4>Integrity</h4>
+            <p>We uphold honesty and transparency in all our processes. </p>
+        </div>
+
+        <div class="value-card">
+            <h4>Freshness</h4>
+            <p>We guarantee our vegetables are harested fresh every day. </p>
+        </div>
+
+        <div class="value-card">
+            <h4>Sustainability</h4>
+            <p>We practice eco-friendly and organic farming techniques. </p>
+        </div>
+
+        <div class="value-card">
+            <h4>Customer Satisfaction</h4>
+            <p>Your health and happiness are our top priorities. </p>
+        </div>
+    </div>
+
+    <div class="team">
+        <h3>Meet Our Team</h3>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="" alt="Founder">
+                <h4>Ntoiti Julius</h4>
+                <p>Founder & Farm Manager</p>
+            </div>
+
+             <div class="team-member">
+                <img src="" alt="Team Member">
+                <h4>John Doe</h4>
+                <p>Sales & Deliery</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
